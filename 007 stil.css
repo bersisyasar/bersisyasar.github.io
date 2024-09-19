@@ -1,0 +1,15 @@
+
+h1{
+    font-size: 50;
+    color: cornflowerblue;
+}
+h2{
+    font-size: 40;
+    color: crimson;
+    background-color: cyan;
+}
+p{
+    font-size: 25;
+    font-family: monospace;
+    color:darkblue;
+}
