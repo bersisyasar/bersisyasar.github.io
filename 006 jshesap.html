@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip Hesaplama</title>
+</head>
+<body>
+    <script>
+        function toplama(){
+            var toplam;
+            s1 = parseFloat(document.getElementById('sayi1').value);
+            s2 = parseFloat(document.getElementById('sayi2').value);
+            toplam = s1+s2;
+            alert("Toplam Sonucu: "+toplam);
+            document.getElementById('sonuc').innerHTML=toplam;
+        }
+        function cikarma(){
+            var cikarim;
+            s1 = parseFloat(document.getElementById('sayi1').value);
+            s2 = parseFloat(document.getElementById('sayi2').value);
+            cikarim = s1-s2;
+            alert("Çıkartma Sonucu: "+cikarim);
+            document.getElementById('sonuc').innerHTML=cikarim;
+        }
+        function carpma(){
+            var carpim;
+            s1 = parseFloat(document.getElementById('sayi1').value);
+            s2 = parseFloat(document.getElementById('sayi2').value);
+            carpim = s1*s2;
+            alert("Çarpım Sonucu: "+carpim);
+            document.getElementById('sonuc').innerHTML=carpim;
+        }
+        function bolme(){
+            var bolum;
+            s1 = parseFloat(document.getElementById('sayi1').value);
+            s2 = parseFloat(document.getElementById('sayi2').value);
+            bolum = s1/s2;
+            alert("Bölme Sonucu: "+bolum);
+            document.getElementById('sonuc').innerHTML=bolum;
+        }
+    </script>
+    <h3>Dört İşlem</h3>
+    <label for="">Sayı 1:</label>
+    <input type="text" id="sayi1"> <br>
+
+    <label for="">Sayı 2:</label>
+    <input type="text" id="sayi2"> <br>
+    <div id="sonuc"></div>
+    <button onclick="toplama()">Toplama</button>
+    <button onclick="cikarma()">Çıkarma</button>
+    <button onclick="carpma()">Çarpma</button>
+    <button onclick="bolme()">Bölme</button>
+
+
+
+    
+</body>
+</html>
