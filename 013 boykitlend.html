@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boy Kitle Endeksi Hesaplama</title>
+</head>
+<body>
+    <label for="">Boy:</label>
+    <input id="boy" type="text"><br>
+    <label for="">Kilo</label>
+    <input id="kilo" type="text"><br>
+    <button onclick="hesapla()">Hesapla</button>
+    <div id="sonuc"></div>
+    <div id="endeks"></div>
+
+    <script>
+        function hesapla(){
+            let boy,kilo,sonuc,endeks,durum="";
+            boy=parseFloat(document.getElementById("boy").value);
+            kilo=parseFloat(document.getElementById("kilo").value);
+            endeks=kilo/(boy*boy);
+            document.getElementById("endeks").innerHTML=endeks;
+            if(endeks<20)
+                durum="Zayıf";
+            else if(endeks>20 && endeks<=25 )
+                durum="Normal"
+            else if(endeks>25 && endeks<=30)
+                durum="Hafif Şişman"
+            else if(endeks>30 && endeks<=35)
+                durum="Şişman"
+            else if(endeks>35 && endeks<=45)
+                durum="Sağlık Açısından Önemli"
+            else if(endeks>45 && endeks<=50)
+                durum="Aşırı Şişman"
+            else if(endeks>=50)
+                durum="Morbid"
+
+            document.getElementById("sonuc").innerHTML=durum;
+            
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF ELSE</title>
+    <style>
+        .kirmizi{
+            background-color: red;
+            color: white;
+        }
+        .yesil{
+            background-color: lime;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <label for="">Not 1:</label>
+    <input id="not1" type="text"><br>
+    <label for="">Not 2:</label>
+    <input id="not2" type="text"><br>
+    <button onclick="hesapla()">Hesaplama</button>
+    <div id="sonuc"></div>
+    <div id="ortalama"></div>
+
+    <script>
+        function hesapla(){
+            let not1,not2,ortalama,durum="";
+            const sonuc = document.getElementById('sonuc');
+            not1=parseFloat(document.getElementById("not1").value);
+            not2=parseFloat(document.getElementById("not2").value);
+            ortalama=(not1+not2)/2;
+            document.getElementById("ortalama").innerHTML=ortalama;
+            if(ortalama>=50){
+                durum="Geçti";
+                sonuc.classList.add('yesil');
+                sonuc.classList.remove('kirmizi');
+            }
+            else{
+                durum="Kaldı";
+                sonuc.classList.add('kirmizi');
+                sonuc.classList.remove('yesil');
+            }
+
+
+            document.getElementById("sonuc").innerHTML=durum;
+
+        }
+    </script>
+</body>
+</html>
