@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diziler</title>
+    <script>
+        const notlar=[25,48,54,70,91,10];
+        let sonEleman, elemanSayisi, sonuc = notlar.find(gecenler), sonucIndex = notlar.findIndex(gecenler);
+        const midchars=['zed','yasuo','malzahar','asol',];
+        const topchars=['urgot','illaoi','trundle','darius'];
+        document.write("Tüm Elemanlar: "+notlar+"<br>");
+        document.write("Geçen Eleman: "+sonuc+"<br>");
+        document.write("Geçenin Sıra Numarası: "+sonucIndex+"<br>");
+        function gecenler(value,index,array){
+            return value >= 50;
+        }
+        
+
+        document.write("<br> Tüm elemanlar: "+midchars+"<br>");
+        document.write('Dizinin ilk elemanı: '+midchars[0]+"<br>");
+        document.write('Dizinin üçüncü elemanı: '+midchars[2]+"<br>");
+
+        elemanSayisi=midchars.length;
+        document.write('Eleman Sayısı:'+elemanSayisi+"<br>");
+
+        document.write("<br> == Diziden Eleman Silme == <br>");
+        midchars.pop();
+        elemanSayisi=midchars.length;
+        document.write('Eleman Sayısı:'+elemanSayisi+"<br>");
+        document.write("Tüm Elemanlar:"+midchars+"<br>");
+
+        document.write("<br> == Diziye Eleman Ekleme <br>");
+        midchars.push("akali");
+        midchars.push("syndra");
+        document.write("Tüm Elemanlar: "+midchars+"<br>");
+
+        document.write("<br> == Dizi Kaydırma - Shift Metodu == <br>");
+        midchars.shift();
+        document.write("Tüm Elemanlar: "+midchars+"<br>");
+        elemanSayisi=midchars.length;
+        document.write('Eleman Sayısı: '+elemanSayisi+"<br>");
+
+        document.write("<br> == Dizileri Birleştirme <br>");
+        document.write("Mid Chars: "+midchars+"<br>");
+        document.write("Top Chars: "+topchars+"<br>");
+        const chars = midchars.concat(topchars);
+        document.write("== Dizileri Birleştiriyoruz ==");
+        document.write(chars);
+        document.write('<br> Eleman Sayısı:'+chars.length+"<br>");
+
+        document.write("<br> == Dizide Eleman Arama == <br>");
+        document.write("Tüm Elemanlar: "+chars+"<br>");
+        let pozisyon1 = chars.indexOf("malzahar")+1;
+        let pozisyon2 = chars.indexOf("illaoi")+1;
+        document.write("Malzahar Pozisyonu: "+pozisyon1+"<br>");
+        document.write("Illaoi Pozisyonu: "+pozisyon2+"<br>");
+
+        document.write("<br> == LastIndexOf Kullanımı == <br>");
+        chars.push("yasuo");
+        let sonPozisyon = chars.lastIndexOf("yasuo")+1;
+        document.write("Tüm Elemanlar: "+chars+"<br>");
+        document.write("Yasuo'nun Son Pozisyonu: "+sonPozisyon+"<br>");
+        
+        document.write("<br> == Sort Kullanımı Sıralama == <br>");
+        document.write("Tüm Elemanlar: "+chars+"<br>");
+        chars.sort();
+        document.write("Elemanlar Sıralandı: "+chars+"<br>");
+
+        document.write("<br> == String Sıralama ==<br>");
+        var isimler = [
+            {numara:1,adi:"Şeyda"},
+            {numara:2,adi:"Çetin"},
+            {numara:3,adi:"Vehbi"},
+            {numara:4,adi:"İsmet"}
+    ];
+        sonuc=isimler.sort(karsilastir);
+        function karsilastir(a,b){
+            return a.adi.localeCompare(b.adi);
+        }
+        document.write(JSON.stringify(sonuc)+"<br>");
+
+        document.write("<br> == Sayı Sıralama == <br>");
+        function sayiKarsilastir(a,b){
+            return a,b;
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
