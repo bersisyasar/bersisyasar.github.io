@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Bilme Oyunu</title>
+    <script>
+        rastgeleSayi=Math.floor(Math.random(10)*10+1);
+        tahmin=parseInt(prompt("0-10 Arası Rastgele Sayıyı Bilmeye Çalışın: "+rastgeleSayi));
+        var can=3;
+        while(can--){
+            if(tahmin<rastgeleSayi){
+            can-1;
+            document.write("Yukarı Çıkın. Canınız: "+can);
+        }
+            if(tahmin>rastgeleSayi){
+            can-1;
+            document.write("Aşağı İnin. Canınız: "+can);
+        }
+        if(can==0){
+            document.write("Kaybettiniz.");
+            break;
+        }
+            if(tahmin==rastgeleSayi){
+            document.write("Kazandınız.");
+            break;
+        }
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

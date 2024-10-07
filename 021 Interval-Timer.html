@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <style>
+        #sayi{
+            text-align: center;
+            font-size: 25px;
+        }
+
+    </style>
+    <div id="sayi"></div>
+    <script>
+        s=5;
+        setInterval(() => {
+            document.getElementById("sayi").innerHTML=s;
+            s--;
+            if(s==0-2){
+            alert("Süre Bitti");
+            s=5;
+            
+            }
+        }, 1000);
+        
+    </script>
+</body>
+</html>

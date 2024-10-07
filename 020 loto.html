@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto</title>
+    
+    <style>
+        .sekil{
+            border: 1px solid black;
+            float: left;
+            margin: 5px 10px 5px 10px;
+            padding: 25px;
+            height: 10px;
+            width: 10px;
+            text-align: center;
+            position: relative;
+            left: 0px;
+            border-radius: 4px;
+            transition: 0.4s ease-in-out;
+            flex: 1px;
+            display: flex;
+            gap: 4px;
+        }
+        .sekil:hover{
+            border-radius: 100%;
+            transition: all 600ms ease-in-out;
+            flex: 3;
+            font-weight: bold;
+            cursor: pointer;
+
+            
+
+
+        }
+
+
+
+</style>
+    
+</head>
+<body>
+    <div id="kutu1" class="sekil"></div>
+    <div id="kutu2" class="sekil"></div>
+    <div id="kutu3" class="sekil"></div>
+    <div id="kutu4" class="sekil"></div>
+    <div id="kutu5" class="sekil"></div>
+    <div id="kutu6" class="sekil"></div>
+    <button onclick="hesapla()" class="sekil">HESAPLA</button>
+
+    <script>
+        function hesapla(){
+            var kutular = document.querySelectorAll("[id^=kutu]");
+        for(var i=1;i<=6;i++){
+            a=Math.floor(Math.random(1)*49+1);
+            red=rastgelesayi=Math.floor(Math.random(1)*256);
+            green=rastgelesayi=Math.floor(Math.random(1)*256);
+            blue=rastgelesayi=Math.floor(Math.random(1)*256);
+            document.getElementById("kutu"+i).innerHTML=a;
+            document.getElementById("kutu"+i).style.backgroundColor='rgb('+red+','+green+','+blue+')';
+        }
+        }
+       
+        
+        
+    </script>
+</body>
+</html>
