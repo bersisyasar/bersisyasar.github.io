@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Bilgisayar Satış Mağazası</title>
+    <style>
+        #bilgisayar-foto{
+            width: 500px;
+            height: 500px;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            float: left;
+        }
+
+        #bilgisayar-ozellikler{
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Fredoka", sans-serif;
+            width: 800px;
+            height: 367px;
+            float: left;
+            margin-left: 20px;
+            padding: 10px;
+            background: linear-gradient(rgb(187, 182, 182),rgb(133, 129, 129));
+            box-shadow: 5px 5px rgb(70, 75, 75);
+        }
+        #bilgisayar-fiyat{
+            font-size: 50px;
+            font-weight: 400;
+            font-family: "Fredoka", sans-serif;
+            display: inline;
+            margin-left: 20px;
+        }
+        #bilgisayar-isim{
+            font-size: 35px;
+            font-weight: 400;
+            font-family: "Fredoka", sans-serif;
+            float: left;
+            display: inline;
+            margin-left: 20px;
+        }
+        #item-box{
+            background: linear-gradient(brown,rgba(165, 42, 42, 0.144));
+            color: black;
+            padding: 5px 10px 5px 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgb(70, 75, 75);
+            font-family: "Fredoka", sans-serif;
+            font-weight: 400;
+        }
+        #categories{
+            background-color: #FFF;
+            color: black;
+        }
+
+        #categories #item{
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+        #buton{
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Fredoka", sans-serif;
+            background: linear-gradient(brown,rgba(165, 42, 42, 0.144));
+            color: black;
+            width: 500px;
+            height: 100px;
+        }
+        #buton:hover{
+            font: bold;
+            background: linear-gradient(rgba(165, 42, 42, 0.144),brown);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="item-box">PC SATIŞ</div>
+    <img src="bilgfoto.webp" id="bilgisayar-foto" alt="rogstrix">
+    <div id="bilgisayar-fiyat">151.684 TL</div><br>
+    <div id="bilgisayar-isim">ÜST DÜZEY GELİŞMİŞ F/P RGB ASUS ROG STRIX LAPTOP</div><br><br><br>
+    <div id="bilgisayar-ozellikler">
+        İŞLEMCİ: Intel i9 14900HX <br>
+        BELLEK (RAM): DDR5 4800MHz 128GB (2x64GB) <br>
+        EKRAN KARTI: GDDR6 24GB VRAM Nvidia RTX 4090 TI <br>
+        GÜÇ KAYNAĞI: 80+ TITANIUM 1000W <br>
+        NVMe SSD: 1 TB <br>
+        HDD: 1 TB <br>
+        EKRAN: 4K 20" 240 HZ 0.1 ms FAST IPS 10bit <br>
+        KLAVYE: Red Switch <br>
+        İŞLETİM SİSTEMİ: Windows 11 Pro 64 <br>
+        PİL: Lityum-İyon Pil 500 Şarj Döngüsü <br><br>
+        <button onclick="alert(ÜrünSepeteEklendi)" id="buton">SEPETE EKLE</button>
+    </div>
+    
+</body>
+</html>
