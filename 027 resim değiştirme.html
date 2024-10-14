@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Değiştirme</title>
+    <style>
+        #resim{
+            overflow: hidden;
+            width: auto;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="midgard1.jpg" id="resim" alt="midgard">
+    <script>
+        saniye=0;
+        const resimler =[
+            "midgard1.jpg",
+            "vanaheim.webp",
+            "swar.jfif"
+        ];
+        var siraNo=0;
+        setInterval(() => {
+            document.getElementById("resim").src =resimler[siraNo];
+            siraNo = (siraNo+1) % resimler.length;
+            
+        },1000);
+    </script>
+</body>
+</html>

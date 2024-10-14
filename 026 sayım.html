@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayım</title>
+    <style>
+        #zaman{
+            background-color:darkcyan;
+            color: #fff;
+            float: right;
+            width: 400px;
+            height: 200px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="zaman"></div>
+    <script>
+        dakika=0;
+        saniye=0;
+        msaniye=0;
+        dakikaMetin="";
+        saniyeMetin="";
+        msaniyeMetin="";
+        if(dakika<10)dakikaMetin="0"+dakika;
+        if(saniye<10)saniyeMetin="0"+saniye;
+        if(msaniye<10)msaniyeMetin="0"+msaniye;
+
+        document.getElementById("zaman").innerHTML=dakikaMetin+":"+saniyeMetin+":"+msaniyeMetin;
+        setInterval(() => {
+            if(dakika<10){
+                dakikaMetin="0"+dakika;
+            }else dakikaMetin=dakika;
+            if(saniye<10){
+                saniyeMetin="0"+saniye;
+            }else saniyeMetin=saniye;
+            if(msaniye<10){
+                msaniyeMetin="0"+msaniye;
+            }else msaniyeMetin=msaniye;
+
+            if(dakika==2 && saniye==0){
+                alert("Süre Bitti");
+                exit();
+            }
+            document.getElementById("zaman").innerHTML=dakikaMetin+":"+saniyeMetin+":"+msaniyeMetin;
+            if(msaniye==100){
+                msaniye=0;
+                saniye++; 
+            }else msaniye++;
+            if(saniye==59){
+                dakika++;
+                saniye=0;
+            }else { msaniye++;}
+        },50)
+    </script>
+</body>
+</html>
