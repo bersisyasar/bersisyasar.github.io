@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+    
+
+        #footer{
+            height: 50px;
+            width: 100%;
+            background-color: blue;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: "Fredoka", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            font-size: 12px;
+        }
+
+        #banner{
+            height: 100px;
+            background: linear-gradient(goldenrod,#68400c);
+            width: -moz-calc(100%-20px);
+            width: -webkit-calc(100%-20px);
+            width: calc(100%-20px);
+            padding: 10px;
+            font-size: 50px;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        #navigation{
+            background: linear-gradient(lime,green);
+            width: 100%;
+            height: 29px;
+        }
+
+        #menu{
+            font-size: 18px;
+            width: 100%;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #menu li{
+            background: linear-gradient(lime, green);
+            color: black;
+            padding: 6px 10px 6px 10px;
+            margin: 0px;
+            display: inline ;
+            float: left;
+            
+        }
+
+        #menu li:hover{
+            background: linear-gradient(green,lime);
+            cursor: pointer;
+            text-shadow: 1px 1px 1px #505203, 1px 1px 1px #d6d30c;
+        }
+
+        #content-left{
+            min-height: 600px;
+            width: 15%;
+            background-color: white;
+            float: left;
+            
+        }
+
+        #content-center{
+            min-height:200px;
+            width: 70%;
+            background-color: brown;
+            float: left;
+            text-align: center;
+        }
+        #content-center2{
+            min-height: 200px;
+            width: 70%;
+            background-color: brown;
+            float: left;
+            text-align: center;
+        }
+        #content-center3{
+            min-height: 200px;
+            width: 70%;
+            background-color: brown;
+            float: left;
+            text-align: center;
+        }
+
+        #content-right{
+            min-height: 600px;
+            width: 15%;
+            background-color: white;
+            float: left;
+            text-align: right;
+        }
+        #footer-left{
+            height: 75px;
+            margin-left: 0%;
+            width: 20%;
+            background-color: red;
+            float: left;
+        }
+        #footer-right{
+            height: 75px;
+            margin-right: 0%;
+            width: 20%;
+            background-color: blueviolet;
+            float: left;
+            text-align: right;
+        }
+        #footer-center{
+            height: 75px;
+            width: 60%;
+            background-color: coral;
+            float: left;
+            text-align: center;
+        }
+
+        #footer-band{
+            height: 50px;
+            width: 100%;
+            background-color: darkslategray;
+            float: right;
+            margin-right: 0px;
+        }
+
+        #content-post1:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post2:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post3:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post4:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post5:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post6:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post7:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post8:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post9:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post10:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post11:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+        #content-post12:hover{
+            background: linear-gradient(rgb(95,158,160),rgb(6, 66, 68)) ;
+            transition: all 600ms ease-in-out;
+            border-radius: 20%;
+        }
+
+        #content-post1{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post2{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post3{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post4{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post5{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            display: block;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post6{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post7{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post8{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post9{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            display: block;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post10{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post11{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #content-post12{
+            height: 250px;
+            width: 200px;
+            margin: 12px;
+            float: left;
+            display: inline;
+            background-color: cadetblue;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        #categories{
+            background-color: #FFF;
+            color: black;
+        }
+
+        #categories #item{
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        #categories #item:hover{
+            color: white;
+            font-size: 15px;
+            background-color: yellowgreen;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #item-box{
+            
+            background: linear-gradient(green,lime);
+            color: black;
+            padding: 5px 10px 5px 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgb(70, 75, 75);
+            font-family: "Fredoka", sans-serif;
+            font-weight: 400;
+        }
+
+        #post-list{
+            border: 1px solid rgb(70, 75, 75);
+            padding: 5px;
+            height: 100%;
+            width: -moz-calc(100%-10px);
+            width: -webkit-calc(100%-10px);
+            width: calc(100%-10px);
+            display: inline-block;
+            text-align: center;
+        }
+        #post-list p{
+            color: rgb(26, 24, 24);
+            font-size: 12px;
+            line-height: 15px;
+            float: left;
+            margin-left: 47px;
+            margin-right: 47px;
+            width: -moz-calc(100%-100px);
+            width: -webkit-calc(100%-100px);
+            width: calc(100%-100px);
+        }
+
+        #post-list p:hover{
+            background-color: rgb(26, 24, 24);
+            color: white;
+        }
+
+        #post-list #image{
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgb(26, 24, 24);
+            
+        }
+
+        #post-list #image:hover{
+            border: 2px solid white;
+        }
+
+        #FOTO{
+            width: 100%;
+        }
+        #AYRANFOTO{
+            width: 80%;
+        }
+        #altitle{
+            font-size: 25px;
+        }
+
+.gallery{
+    display: flex;
+    gap: 4px;
+}
+
+.Card{
+    
+    left: 0px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 8px;
+    height: 250px;
+    transition: 0.4s ease-in-out;
+    flex: 1px;
+}
+
+.Card1{
+    
+    left: 0px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 8px;
+    height: 250px;
+    transition: 0.4s ease-in-out;
+    flex: 1px;
+}
+
+.Card:hover{
+    flex: 3;
+    font-weight: bold;
+    cursor: pointer;
+    #FOTO{
+        width: 50%;
+    }
+    #AYRANFOTO{
+        width: 35%;
+    }
+    #websayfası{
+        font-size: 100px;
+    }
+}
+
+.Card1:hover{
+    flex: 3;
+    font-weight: bold;
+    cursor: pointer;
+    #FOTO{
+        width: 50%;
+    }
+    #AYRANFOTO{
+        width: 35%;
+    }
+    #websayfası{
+        font-size: 100px;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <div id="banner">AHMET BERSİS YAŞAR <p id="websayfası">WEB SAYFASI</p></div> 
+    
+    
+    <div id="navigation">
+        <ul id="menu">
+            <li>Ana Sayfa</li>
+            <li>Hakkımda</li>
+            <li>İletişim</li>
+            <li>Hobiler</li>
+        </ul>
+    </div>
+    <div id="content-left"><h3></h3>
+        <div id="categories"><ul id="item-box">KATEGORİLER</ul></div>
+        <div id="categories"><ul>
+            <li type="square" id="item">PYTHON</li>
+            <li type="square" id="item">JAVASCRIPT/CSS</li>
+            <li type="square" id="item">C#</li>
+            <li type="square" id="item">ARDUINO</li>
+        </ul></div>
+    </div>
+    <div class="gallery" id="content-center">
+        <div class="Card" id="content-post1"><img src="resim1.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card" id="content-post2"><img src="resim2.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card" id="content-post3"><img src="resim3.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card" id="content-post4"><img src="ayran.png" id="AYRANFOTO"><br>AYRAN BABAAA</div>
+        
+    </div>
+   <!-- <div class="gallery" id="content-center2">
+        <div class="Card1" id="content-post5"><img src="resim1.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card1" id="content-post6"><img src="resim2.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card1" id="content-post7"><img src="resim3.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card1" id="content-post8"><img src="ayran.png" id="AYRANFOTO"><br>AYRAN BABAAA</div>
+    </div>
+    <div class="gallery" id="content-center3">
+        <div class="Card1" id="content-post9"><img src="resim1.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card1" id="content-post10"><img src="resim2.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card1" id="content-post11"><img src="resim3.jpg" id="FOTO"><br>MEKAN</div>
+        <div class="Card1" id="content-post12"><img src="ayran.png" id="AYRANFOTO"><br>AYRAN BABAAA</div>
+    </div> -->
+    
+    <div id="content-right"><div id="categories"><ul id="item-box">ÇOK OKUNANLAR</ul></div><div id="post-list">
+        <p id="p"><img id="image" src="resim1.jpg"><br>LOREM IPSUM DOLOR SIT AMET </p> 
+    </div></div>
+    <div id="footer">
+        <div id="footer-left">SOL</div>
+        <div id="footer-center">ORTA</div>
+        <div id="footer-right">SAĞ</div>
+        <div id="footer-band">SOCIAL</div>
+    </div>
+    
+    
+</body>
+</html>
