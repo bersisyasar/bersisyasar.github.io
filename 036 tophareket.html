@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Hareket Ettirme</title>
+</head>
+<body>
+    <div id="top"></div>
+    <script>
+        document.addEventListener('keydown',function(tus){
+            if(tus.keyCode==37){
+                document.getElementById('top').style.left=0.25+'px';
+            }
+            if(tus.keyCode==38){
+                document.getElementById('top').style.top=0.25+'px';
+            }
+            if(tus.keyCode==39){
+                document.getElementById('top').style.right=0.25+'px';
+            }
+            if(tus.keyCode==40){
+                document.getElementById('top').style.bottom=0.25+'px';
+            }
+        })
+    </script>
+</body>
+</html>

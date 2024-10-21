@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnKeyup Olayı</title>
+    <style>
+        #karesonuc{
+            background-color:darkred ;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+        #kupsonuc{
+            background-color: darkgreen;
+            color: #FFF;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+    </style>
+    <script>
+        function islemYap(nesne){
+            x=nesne.value;
+            karesi=x*x;
+            kupu=x*x*x;
+            document.getElementById("karesonuc").innerHTML=karesi;
+            document.getElementById("kupsonuc").innerHTML=kupu;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="">Sayı Giriniz:</label>
+        <input type="text" value="0" onkeyup="islemYap(this)" id="sayi">
+        <div id="karesonuc">0</div>
+        <div id="kupsonuc">0</div>
+    </form>
+</body>
+</html>
