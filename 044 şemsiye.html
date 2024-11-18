@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şemsiye</title>
+    <style>
+        #semsiye{
+            margin: 0;
+        }
+        .nesne{
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+    </style>
+    <script>
+        function goster(){
+            //ekranGenislik=window.screen.width;
+            //ekranYukseklik=window.screen.height;
+            //alert(ekranGenislik+"x"+ekranYukseklik);
+            yukseklik=document.body.clientWidth;
+            genislik=document.body.clientHeight;
+            //alert(genislik+"x"+yukseklik);
+            nesneGenislik=document.getElementById("semsiye").style.width;
+            nesneYukseklik=document.getElementById("semsiye").style.height;
+            solbosluk=(ekranGenislik-nesneGenislik)/2;
+            ustbosluk=(ekranYukseklik-nesneYukseklik)/2;
+            document.getElementById("semsiye").style.marginLeft=solbosluk+"px";
+            document.getElementById("semsiye").style.marginTop=ustbosluk+"px";
+        }
+        function semsiyeKapat(){
+            document.getElementById("semsiye").src="semsiye_kapali.jpg";
+        }
+        function semsiyeAc(){
+            document.getElementById("semsiye").src="semsiye_acik.jpg"
+        }
+    </script>
+</head>
+<body>
+    <img src="semsiye_kapali.jpg" id="semsiye" onmousemove="semsiyeAc()" onmousemove="goster()"
+    onmouseleave="semsiyeKapat()">
+</body>
+</html>
