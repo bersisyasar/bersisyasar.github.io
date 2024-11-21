@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tablo</title>
+    <style>
+        table,th,td{
+            
+            padding: 7px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 17px;
+            width: 50%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            border-bottom: 1px solid #cccbcb;
+            
+        }
+        tr{
+            height: 50px;
+        }
+        tr:nth-child(even){
+            background-color: #e6e6e6;
+        }
+        tr:hover{
+            background-color: #cecbcb;
+        }
+        #Za{
+            text-align: center;
+        }
+        td{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <tr align="center">
+            <td bgcolor="limegreen">Tank</td>
+            <td bgcolor="orange">Assasin</td>
+            <td bgcolor="lightblue">Marksman</td>
+        </tr>
+        <tr>
+            <td id="Za">KURBAĞA</td>
+            <td id="Za">Zed</td>
+            <td id="Za">Kalista</td>
+        </tr>
+        <tr>
+            <td id="Za">Ornn</td>
+            <td id="Za">Katarina</td>
+            <td id="Za">Kai'Sa</td>
+        </tr>
+        <tr>
+            <td id="Za">Braum</td>
+            <td id="Za">Talon</td>
+            <td id="Za">Jhin</td>
+        </tr>
+    </table>
+</body>
+</html>

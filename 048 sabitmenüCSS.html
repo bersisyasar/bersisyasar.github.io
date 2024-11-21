@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Menü</title>
+    <style>
+        .navbar{
+            position: fixed;
+            background-color: rgb(39, 158, 39);
+            top: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #fff;
+            float: left;
+            display: block;
+            font-size: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: rgb(24, 104, 24);
+            transition: all 600ms ease-in-out;
+        }
+    </style>
+</head>
+<body> 
+    <div class="navbar">
+        <a href="#anasayfa">Ana Sayfa</a>
+        <a href="#hakkımızda">Hakkımızda</a>
+        <a href="#projeler">Projeler</a>
+    </div>
+</body>
+</html>

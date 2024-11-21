@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    
+    <title>E-Ticaret</title>
+    <style>
+        #urunFotograf{
+            width: 98%;
+            padding: 1%;
+            height: auto;
+            border-radius: 20px;
+        }
+        #urunKart{
+            float: left;
+            line-height: 16px;
+            margin-left: 8px;
+            padding: 5px;
+            width: 250px;
+            height: 350px;
+            background-color: #dddcdc;
+            border-radius: 20px;
+        }
+        #urunKart:hover{background-color: #b1b0b0; transition: all 600ms ease-in-out; cursor: pointer;}
+        #urunBilgi{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 12px;
+        }
+        #urunFiyat{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: bold;
+            font-size: 25px;
+        }
+        .navbar{
+            position:relative;
+            background-color: orange;
+            top: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #fff;
+            float: left;
+            display: block;
+            font-size: 15px;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: rgb(172, 112, 0);
+            transition: all 600ms ease-in-out;
+        }
+        #banner{
+            height: 100px;
+            background: linear-gradient(goldenrod,#68400c);
+            width: -moz-calc(100%-20px);
+            width: -webkit-calc(100%-20px);
+            width: calc(100%-20px);
+            padding: 10px;
+            font-size: 50px;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+        }
+        #a{
+            font-size: 30px;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="banner">
+            HepsiCebimde <br>
+            <span id="a">E-Ticaret</span>
+        </div>
+        <div class="navbar">
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#hakkımızda">Hakkımızda</a>
+            <a href="#ürünler">Ürünler</a>
+        </div>
+        <br>
+        <div id="urunKart">
+            <img src="katana-17-b13vgk-873tr_large.webp" id="urunFotograf" alt="a">
+            <span id="urunBilgi">MSI KATANA 17 B13VFK-1037XTR Intel Core i7 13620H 16GB 1TB SSD RTX4060 Freedos 17.3" FHD 144Hz Taşınabilir Bilgisayar</span>
+            <br> <br>
+            <span id="urunFiyat">50,999,00 TL</span>
+        </div>
+        <div id="urunKart">
+            <img src="137965-1_large.webp" id="urunFotograf" alt="a">
+            <span id="urunBilgi">Asus Rog Strix G16 13.Nesil Core i7 13650HX-RTX4060 8Gb-16Gb-512Gb-16inc-W11</span>
+            <br> <br> <br>
+            <span id="urunFiyat">69,799,00 TL</span>
+        </div>
+        <div id="urunKart">
+            <img src="144995-1-1_large.webp" id="urunFotograf" alt="a">
+            <span id="urunBilgi">Lenovo LOQ 12.Nesil Core i5 12450HX-RTX3050 6Gb-8Gb-512Gb Ssd-15.6-W11</span>
+            <br> <br> <br>
+            <span id="urunFiyat">32,999,00 TL</span>
+        </div>
+    </div>
+    
+</body>
+</html>
